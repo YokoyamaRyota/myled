@@ -1,2 +1,2 @@
-# myled
-ロボットシステム学のraspberry pi 3 のledのデバイスドライバ
+# ロボットシステム学課題
+raspberry pi3 のled用のデバイスドライバ
