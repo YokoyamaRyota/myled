@@ -21,3 +21,5 @@ chmod 666 /dev/myled0
 echo red > /dev/myled0
 ```
 この色以外にもblue,green,purple,yellow,whilteの色に対応しています。clearでledの光を消せます。
+## 動画
+[![Audi R8](http://img.youtube.com/vi/5zqgm7Bb5bU/0.jpg)](https://www.youtube.com/watch?v=5zqgm7Bb5bU　)
