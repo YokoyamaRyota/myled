@@ -1,9 +1,9 @@
 # ロボットシステム学課題
 ## 概要
-raspberry pi3b+でのカソードコモンRGBLEDのデバイスドライバです。
+raspberry pi3 model b+でのカソードコモンRGBLEDのデバイスドライバです。
 redやblueなどの文字でledを光ります。
 ## 使用部品
-1. raspberry pi3b+
+1. raspberry pi3 model b+
 2. 100Ω抵抗
 3. 220Ω抵抗
 4. RGBフルカラーLED 5mm OSTA5131A カソードコモン
