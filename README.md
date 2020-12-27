@@ -2,6 +2,8 @@
 ## 概要
 raspberry pi3 model b+でのカソードコモンRGBLEDのデバイスドライバです。
 redやblueなどの文字でledを光ります。
+## 動作環境
+os ubuntu20.04
 ## 使用部品
 1. raspberry pi3 model b+
 2. 100Ω抵抗
