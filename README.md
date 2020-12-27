@@ -31,4 +31,4 @@ echo red > /dev/myled0
 ```
 この色以外にもblue,green,purple,yellow,whilteの色に対応しています。clearでledの光を消せます。
 ## ライセンス
-GNU General Public License v3.0
+[GNU General Public License v3.0](https://github.com/YokoyamaRyota/robosys2020_kadai1/blob/main/COPYING)
