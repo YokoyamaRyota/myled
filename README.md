@@ -7,7 +7,14 @@ redやblueなどの文字でledを光ります。
 2. 100Ω抵抗
 3. 220Ω抵抗
 4. RGBフルカラーLED 5mm OSTA5131A カソードコモン
-
+## 動画
+動作中の動画です。
+[![Audi R8](http://img.youtube.com/vi/5zqgm7Bb5bU/0.jpg)](https://www.youtube.com/watch?v=5zqgm7Bb5bU　)
+## インストール方法
+次のコマンドを実行します。
+```
+git clone 
+```
 ## 実行方法
 raspberry piのGNDとLEDのカソードを繋げ、P25と赤に100Ω抵抗、P24と緑、P23と青を220Ω抵抗を挟んで繋げます。
 その後次のコマンドを実行します。
@@ -21,5 +28,4 @@ chmod 666 /dev/myled0
 echo red > /dev/myled0
 ```
 この色以外にもblue,green,purple,yellow,whilteの色に対応しています。clearでledの光を消せます。
-## 動画
-[![Audi R8](http://img.youtube.com/vi/5zqgm7Bb5bU/0.jpg)](https://www.youtube.com/watch?v=5zqgm7Bb5bU　)
+## ライセンス
