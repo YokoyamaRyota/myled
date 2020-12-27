@@ -1,3 +1,5 @@
+// 	Copyright (C) 2020 Ryuichi Ueda and Yokoyama Ryota. All right reserved. //
+
 #include <linux/module.h>
 #include <linux/fs.h>
 #include <linux/cdev.h>
@@ -8,7 +10,7 @@
 #define RED_PIN 25
 #define GRE_PIN 24
 #define BLU_PIN 23
-MODULE_AUTHOR("Yokoyama Ryota");
+MODULE_AUTHOR("Ryuichi Ueda and Yokoyama Ryota");
 MODULE_DESCRIPTION("driver for LED control");
 MODULE_LICENSE("GPL");
 MODULE_VERSION("0.0.1");
@@ -104,8 +106,8 @@ static ssize_t sushi_read(struct file* filp,char *buf,size_t count,loff_t* pos)
 	char sushi[]={"sushi"};
 	if(copy_to_user(buf+size,(const char *)sushi,sizeof(sushi)))
 	{
-	printk(KERN_ERR"sushi copy_to_user failed\n");
-	return -EFAULT;
+		printk(KERN_ERR"sushi copy_to_user failed\n");
+		return -EFAULT;
 	}
 	size+= sizeof(sushi);
 	return size;
@@ -143,8 +145,8 @@ static int __init init_mod(void)
 	cls=class_create(THIS_MODULE,"myled");
 	if(IS_ERR(cls))
 	{
-	printk(KERN_ERR"class_create failed");
-	return PTR_ERR(cls);
+		printk(KERN_ERR"class_create failed");
+		return PTR_ERR(cls);
 	}
 	device_create(cls,NULL,dev,NULL,"myled%d",MINOR(dev));
 	gpio_base=ioremap_nocache(0x3f200000,0xA0);
